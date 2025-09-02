@@ -18,9 +18,9 @@ function Home(){
       <form>
         <h1>Cadastro de Usuários</h1>
         <input name='nome' type='text' placeholder='Nome completo'/>
-        <input name='idade' type='number' placeholder='Idade'/>
-        <input name='email' type='email' placeholder='Email'/>
-        <button type='button'>Cadastrar</button>
+        <input name='idade' type='number' placeholder='Idade' min='1' step='1'/>
+        <input name='email' type='email' placeholder='seuemail@exemplo.com'/>
+        <button type='submit'>Cadastrar</button>
       </form>
 
       {usuarios.map(usuario => (
